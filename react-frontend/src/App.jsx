@@ -7,7 +7,7 @@ function App() {
     <Routes>
       {/* <Route path="/" element={<Layout />}> */}
         <Route path="/login" element={<Login />} />
-      <Route path="/profile" element={Profile}/>
+      <Route path="/profile" element={<Profile/>}/>
         {/* <Route path="contact" element={<Contact />} />
         <Route path="*" element={<NoPage />} /> */}
       {/* </Route> */}
