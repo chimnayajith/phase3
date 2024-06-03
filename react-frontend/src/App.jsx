@@ -1,7 +1,9 @@
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import Login from './components/Login';
 import Profile from './components/Profile';
-import Navbar from '.components/Navbar';
+import Navbar from './components/Navbar';
+import NavbarAttendancePage from './components/NavbarAttendancePage';
+import AttendancePage from './components/AttendancePage';
 import AdminPanel from '.components/AdminPanel;
 function App() {
   return (
