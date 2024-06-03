@@ -1,0 +1,110 @@
+:root {
+  --navy: #2B3467;
+  --red: #EB455F;
+  --blue: #BAD7E9;
+  --creamy: #FCFFE7;
+  --lightgrey: rgb(226, 226, 226);
+  --white: #fff;
+}
+
+body {
+  background: var(--blue);
+  overflow-x: hidden;
+  padding: 0px;
+  margin: 0px
+}
+
+.topnav {
+  overflow: hidden;
+  background-color: #2B3467;
+
+}
+
+.topnav a {
+  float: left;
+  display: block;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+  width:30vh;
+  font-size: large;
+}
+
+.topnav a:hover {
+  background-color: var(--creamy);
+  color: var(--navy);
+}
+
+.topnav a.active {
+  background-color: #eb455e;
+  color: white;
+}
+
+.topnav a.active:hover {
+  background-color: var(--creamy);
+  color:black;
+}
+
+.topnav .icon {
+  display: none;
+}
+
+.my_div {
+  position: relative;
+  width: 45%;
+  height: fit-content;
+  line-height: 1;
+  display: flex;
+  float: left;
+  flex-direction: column;
+  padding: 1px;
+  padding-left: 10px;
+  margin: 5px;
+}
+
+.card_1 {
+  justify-content: center;
+  align-items: center;
+  color: var(--navy);
+  width:60vh;
+  height:80vh;
+  background-color: var(--white);
+  margin: 50px 30px;
+  transition: all 2s;
+  border-radius: 10%;
+}
+.card_1:hover {
+  scale: 1.02;
+  color:var(--red);
+  box-shadow: 0 0 3px 1px var(--navy);
+}
+#user-img{
+  width: 30vh;
+  height: 30vh;
+}
+
+.card_2 {
+  justify-content: center;
+  align-items: left;
+  line-height: 4vh ;
+  color: var(--navy);
+  width:60%;
+  height:25%;
+  background-color: var(--white);
+  margin-top: 55px;
+  margin-left: 10px;  
+  font-weight: bold;
+  top:-4px;
+  left:-4px;  
+  font-size: 20px;
+}
+.card_2:hover {
+  color: var(--red);
+}
+
+.logo{
+  float: right;
+  height: 6vh;
+}
