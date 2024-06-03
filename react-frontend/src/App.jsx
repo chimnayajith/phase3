@@ -4,7 +4,7 @@ import Profile from './components/Profile';
 import Navbar from './components/Navbar';
 import NavbarAttendancePage from './components/NavbarAttendancePage';
 import AttendancePage from './components/AttendancePage';
-import AdminPanel from '.components/AdminPanel;
+import AdminPanel from '.components/AdminPanel';
 function App() {
   return (
     <BrowserRouter>
