@@ -4,6 +4,7 @@ import Profile from './components/Profile';
 import Navbar from './components/Navbar';
 import AttendancePage from './components/AttendancePage';
 import AdminPanel from './components/AdminPanel';
+import Register from './components/Register';
 function App() {
   return (
     <BrowserRouter>
@@ -13,6 +14,7 @@ function App() {
       <Route path="/profile" element={<Profile/>}/>
       <Route path="/adminpanel" element={<AdminPanel/>}/>
       <Route path="/attendancepage" element={<AttendancePage/>}/>
+      <Route path="/register" element={<Register/>}/>
       {/* </Route> */}
     </Routes>
   </BrowserRouter>
