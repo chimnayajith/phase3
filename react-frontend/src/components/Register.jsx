@@ -46,7 +46,24 @@ const Register = () => {
 
         if (username && email && password && password === confirmPassword) {
             console.log('Form submitted', { username, email, password, confirmPassword });
-            // Proceed with form submission (e.g., API call)
+            fetch('http://127.0.0.1:3000/auth/register/', {
+                method: 'POST',
+                headers: {
+                  'Content-Type': 'application/json'
+                },
+                body: JSON.stringify({
+                  username: username,
+                  password: password,
+                  email:email
+                })
+              })
+              .then(response => response.json())
+              .then(data => {
+                console.log(data);
+              })
+              .catch(error => {
+                console.error(error);
+              });
         }
     };
 

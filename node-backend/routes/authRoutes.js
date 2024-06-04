@@ -26,7 +26,7 @@ router.post("/login", async (req, res) => {
 // register new account route
 router.post("/register", async (req, res) => {
   try {
-    let { username, email, password, role } = req.body;
+    let { username, email, password} = req.body;
     username = username.trim();
     email = email.trim();
     password = password.trim();
@@ -65,7 +65,6 @@ router.post("/register", async (req, res) => {
         username,
         email,
         password,
-        role,
       });
       res.status(200).json(newUser);
     }

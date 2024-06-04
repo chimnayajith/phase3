@@ -10,26 +10,33 @@ const Login = () => {
     const [usernameError, setUsernameError] = useState('');
     const [passwordError, setPasswordError] = useState('');
 
-    const handleSubmit = (e) => {
-        e.preventDefault();
-        if (!username) {
-            setUsernameError('Username is required');
+    fetch('http://127.0.0.1:3000/auth/login', {
+        method: 'POST',
+        headers: {
+          'Content-Type': 'application/json'
+        },
+        body: JSON.stringify({
+          username: username,
+          password: password
+        })
+      })
+      .then(response => {
+        if (response.ok) {
+          return response.json();
         } else {
-            setUsernameError('');
+          return response.json().then(data => {
+            throw new Error(data.message || 'An error occurred during login');
+          });
         }
-
-        if (!password) {
-            setPasswordError('Password is required');
-        } else {
-            setPasswordError('');
-        }
-
-        if (username && password) {
-            console.log('Form submitted', { username, password });
-            // Proceed with form submission (e.g., API call)
-        }
-    };
-
+      })
+      .then(data => {
+        console.log(data);
+        // Handle successful login, 
+      })
+      .catch(error => {
+        console.error(error);
+        alert(error.message);
+      });
     return (
         <div className="container">
             <img className="wave" src={Background} alt="Background" />
