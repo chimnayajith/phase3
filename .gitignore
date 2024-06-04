@@ -1,0 +1,11 @@
+# Ignore node_modules and package-lock.json in node-backend
+/node-backend/node_modules/
+/node-backend/package-lock.json
+
+# Optionally, ignore node_modules in react-frontend if it exists
+/react-frontend/node_modules/
+/react-frontend/package-lock.json
+
+# If you want to ignore node_modules and package-lock.json globally
+node_modules/
+package-lock.json
