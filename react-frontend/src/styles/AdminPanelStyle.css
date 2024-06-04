@@ -86,10 +86,6 @@ a:hover i{
   bottom: 0;
 }
 
-.container{
-  display: flex;
-}
-
 .main{
   position: relative;
   padding: 20px;

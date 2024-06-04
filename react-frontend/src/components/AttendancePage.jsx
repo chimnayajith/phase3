@@ -9,7 +9,7 @@ const AttendancePage = () => {
   };
 
   return (
-    <main className="container" id="main">
+    <main style={"display:flex"} id="main">
       <form className="text-center">
         <div className="icon">
           <img src="/images/attendence img.png" alt="Attendance" />

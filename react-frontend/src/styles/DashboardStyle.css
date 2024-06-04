@@ -84,10 +84,6 @@ a:hover i{
   bottom: 0;
 }
 
-.container{
-  display: flex;
-}
-
 /* MAin Section */
 .main{
   position: relative;

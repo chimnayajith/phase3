@@ -1,7 +1,9 @@
 // src/components/Attendance.jsx
 import React from 'react';
+import { Link } from 'react-router-dom';
 import '../styles/AdminPanelStyle.css';
-
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import {faUserCog } from '@fortawesome/free-solid-svg-icons';
 const Attendance = () => {
   return (
     <section className="main">

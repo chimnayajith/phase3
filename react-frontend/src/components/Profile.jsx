@@ -13,7 +13,7 @@ function Profile() {
         <a href="/login">Log Out</a>
       </div>
 
-      <section className="container">
+      <section style={"display:flex"}>
         <div className="row">
           <div className="my_div card_1">
             <img id="user-img" src="/images/user_employee.png" alt="User" />
